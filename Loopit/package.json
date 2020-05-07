@@ -5,9 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "gh-pages-build": "ng build --prod --baseHref=/loop-it-task/ --outputPath=dist/loopit",
+    "gh-pages-build": "ng build --prod --baseHref=/loop-it-task/ --outputPath=dist/loop-it-task",
     "predeploy": "npm run gh-pages-build",
-    "deploy": "gh-pages -d dist/loopit/",
+    "deploy": "gh-pages -d dist/loop-it-task/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

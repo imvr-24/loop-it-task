@@ -1,0 +1,23 @@
+
+<div  fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+    <mat-card  class="container" *ngFor="let member of members" fxFlex="1 1 calc(33%-25px)" fxFlex.sm="calc(50%-25px)">
+        <mat-card-header>
+            <img mat-card-avatar [src]="member.url" alt="Photo of {{member.title}}">
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title class="title">{{member.title}}</mat-card-title>
+            <mat-card-subtitle>{{member.subtitle}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <div>
+                <mat-icon> location_on</mat-icon> 
+                {{member.location}}
+            </div>
+        </mat-card-content>
+        <mat-divider></mat-divider>
+        <mat-card-actions fxLayoutAlign="center center">
+            <button routerLink="srch/{{member.id}}" mat-raised-button color="primary">
+                {{ "details" }}
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,0 +1,135 @@
+<style>
+    .i2 {
+        background-color: #fff;
+    }
+</style>
+
+
+<div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="start" fxLayoutGap="10px" fxLayoutGap.xs="10px">
+
+    <div class="i1" fxFlex="30%" fxFlex.lt-sm="100%">
+        <!-- side bar content -->
+        <mat-card class="container" fxFlex="1 1 calc(33%-25px)" fxFlex.sm="calc(50%-25px)">
+            <mat-card-header>
+                <!-- <img mat-card-avatar [src]="member.url" alt="Photo of {{member.title}}"> -->
+                <img mat-card-lg-image [src]="member.url" alt="Photo of {{member.title}}">
+                <div mat-card-image class="example-header-image"></div>
+            </mat-card-header>
+            <mat-card-content>
+                <div style="margin-top: 10px;">
+                    {{ member.location }}
+                </div>
+            </mat-card-content>
+            <mat-icon>location_on</mat-icon>
+            <mat-icon>call</mat-icon>
+            <mat-icon>redo</mat-icon>
+            <mat-divider></mat-divider>
+        </mat-card>
+    </div>
+    <div class="i2" fxFlex="65%" fxFlex.lt-sm="100%">
+        <!-- main content -->
+
+        <mat-tab-group>
+            <mat-tab label="Rating">
+                <mat-accordion>
+
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            Best Facilities
+                        </mat-expansion-panel-header>
+
+                        This the expansion content
+
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            In detail
+                        </mat-expansion-panel-header>
+
+                        This the expansion content
+
+                    </mat-expansion-panel>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            Very Clean
+                        </mat-expansion-panel-header>
+
+                        This the expansion content
+
+                    </mat-expansion-panel>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            Lot of Waiting time
+                        </mat-expansion-panel-header>
+
+                        This the expansion content
+
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </mat-tab>
+            <mat-tab label="Doctors">
+                <mat-accordion>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            Cardiologists 
+                        </mat-expansion-panel-header>
+
+                        <mat-list>
+                            <mat-list-item> Dr. Myles. B. Abbott, M.D. </mat-list-item>
+                            <mat-list-item> Dr. Naresh Trehan </mat-list-item>
+                            <mat-list-item> Dr Sudhansu Bhattacharyya, MBBS, MS, MCH </mat-list-item>
+                        </mat-list>
+
+                    </mat-expansion-panel>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            Dermatologists. 
+                        </mat-expansion-panel-header>
+
+                        <mat-list>
+                            <mat-list-item> Dr. Myles. B. Abbott, M.D. </mat-list-item>
+                            <mat-list-item> Dr. Naresh Trehan </mat-list-item>
+                            <mat-list-item> Dr Sudhansu Bhattacharyya, MBBS, MS, MCH </mat-list-item>
+                        </mat-list>
+
+                    </mat-expansion-panel>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            Surgeons 
+                        </mat-expansion-panel-header>
+
+                        <mat-list>
+                            <mat-list-item> Dr. Myles. B. Abbott, M.D. </mat-list-item>
+                            <mat-list-item> Dr. Naresh Trehan </mat-list-item>
+                            <mat-list-item> Dr Sudhansu Bhattacharyya, MBBS, MS, MCH </mat-list-item>
+                        </mat-list>
+
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </mat-tab>
+            <mat-tab label="Info">
+                <mat-accordion>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            Cardiologists 
+                        </mat-expansion-panel-header>
+
+                        <mat-list>
+                            <mat-list-item> Dr. Myles. B. Abbott, M.D. </mat-list-item>
+                            <mat-list-item> Dr. Naresh Trehan </mat-list-item>
+                            <mat-list-item> Dr Sudhansu Bhattacharyya, MBBS, MS, MCH </mat-list-item>
+                        </mat-list>
+
+                    </mat-expansion-panel>
+                    </mat-accordion>
+            </mat-tab>
+        </mat-tab-group>
+
+    </div>
+
+
+
+</div>
